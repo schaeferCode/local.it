@@ -12,11 +12,14 @@ class HelloWorldGreeting extends Component {
 export default class LotsOfGreetings extends Component {
   render() {
     return (
-      <View >
+      <View style={{flex: 1}}>
+      <View>
         <HelloWorldGreeting name='Nick' />
         <HelloWorldGreeting name='Francis' />
         <HelloWorldGreeting name='Scott' />
         <HelloWorldGreeting name='Christine' />
+      </View>
+      <View style={{flex: 1, backgroundColor: 'powderblue'}}></View>
       </View>
     );
   }
@@ -27,6 +30,6 @@ const styles = StyleSheet.create({
     color: 'gray',
     fontWeight: 'bold',
     fontSize: 30,
-    alignItems: 'center'
+
   }
 })
