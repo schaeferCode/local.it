@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, View, Greeting } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, Greeting } from 'react-native';
 
 class HelloWorldGreeting extends Component {
   render() {
     return (
-      <Text>Hello {this.props.name}!</Text>
+      <Text style={styles.biggray}>Hello {this.props.name}!</Text>
     );
   }
 }
@@ -12,7 +12,7 @@ class HelloWorldGreeting extends Component {
 export default class LotsOfGreetings extends Component {
   render() {
     return (
-      <View style={{alignItems: 'center'}}>
+      <View >
         <HelloWorldGreeting name='Nick' />
         <HelloWorldGreeting name='Francis' />
         <HelloWorldGreeting name='Scott' />
@@ -21,3 +21,12 @@ export default class LotsOfGreetings extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  biggray: {
+    color: 'gray',
+    fontWeight: 'bold',
+    fontSize: 30,
+    alignItems: 'center'
+  }
+})
