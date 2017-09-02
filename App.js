@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, Greeting } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import Discover from './components/Discover';
 
 class HelloWorldGreeting extends Component {
   render() {
@@ -23,7 +24,9 @@ export default class LotsOfGreetings extends Component {
           <HelloWorldGreeting name='Scott' />
           <HelloWorldGreeting name='Christine' />
         </View>
-        <View style={{flex: 2, backgroundColor: 'powderblue'}}></View>
+        <View style={{flex: 2, backgroundColor: 'powderblue'}}>
+          <Discover />
+        </View>
       </View>
     );
   }
