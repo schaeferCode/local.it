@@ -12,14 +12,18 @@ class HelloWorldGreeting extends Component {
 export default class LotsOfGreetings extends Component {
   render() {
     return (
-      <View style={{flex: 1}}>
-      <View>
-        <HelloWorldGreeting name='Nick' />
-        <HelloWorldGreeting name='Francis' />
-        <HelloWorldGreeting name='Scott' />
-        <HelloWorldGreeting name='Christine' />
-      </View>
-      <View style={{flex: 1, backgroundColor: 'powderblue'}}></View>
+      <View style={{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'flex-end'
+      }}>
+        <View>
+          <HelloWorldGreeting name='Nick' />
+          <HelloWorldGreeting name='Francis' />
+          <HelloWorldGreeting name='Scott' />
+          <HelloWorldGreeting name='Christine' />
+        </View>
+        <View style={{flex: 2, backgroundColor: 'powderblue'}}></View>
       </View>
     );
   }
