@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Discover from './components/Discover';
+import Toolbar from './components/toolbar.js'
 
 class HelloWorldGreeting extends Component {
   render() {
@@ -38,5 +39,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
 
+  },
+  bigyellow: {
+    color: 'red',
+    fontSize: 30
   }
 })
