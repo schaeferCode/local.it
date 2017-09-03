@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, TabBarIOS, Text, View, Greeting, Button } from 'react-native';
 import DiscoverTab from './DiscoverTab';
 import SavedTab from './SavedTab';
+import OutingsTab from './OutingsTab';
+import ProfileTab from './ProfileTab';
 
 export default class Toolbar extends Component {
   constructor(props) {
@@ -27,16 +29,20 @@ export default class Toolbar extends Component {
 
   render() {
     return (
-      <View>
-      <Text style={styles.bigyellow}>TOOLBAR</Text>
-      <TabBarIOS selectedTab={this.state.selectedTab}/>
-      <TabBarIOS.Item title="Discover" selected={this.state.selectedTab === 'discover'}>
-      <DiscoverTab/>
-      </TabBarIOS.Item>
-      <TabBarIOS.Item title="Saved" selected={this.state.selectedTab === 'saved'}>
-      <SavedTab/>
-      </TabBarIOS.Item>
-      </View>
+      <TabBarIOS selectedTab={this.state.selectedTab}>
+        <TabBarIOS.Item title="Discover" selected={this.state.selectedTab === 'discover'}>
+          <DiscoverTab/>
+        </TabBarIOS.Item>
+        <TabBarIOS.Item title="Saved" selected={this.state.selectedTab === 'saved'}>
+          <SavedTab/>
+        </TabBarIOS.Item>
+        <TabBarIOS.Item title="Outings" selected={this.state.selectedTab === 'outings'}>
+          <OutingsTab/>
+        </TabBarIOS.Item>
+        <TabBarIOS.Item title="Profile" selected={this.state.selectedTab === 'profile'}>
+          <ProfileTab/>
+        </TabBarIOS.Item>
+      </TabBarIOS>
     );
   }
 }

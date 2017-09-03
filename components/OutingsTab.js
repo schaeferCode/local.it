@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavigatorIOS, StyleSheet, Text, View } from 'react-native';
 
-const DiscoverTab = ({props}) => (
+const OutingsTab = ({props}) => (
   <View>
   <NavigatorIOS style={styles.container}>
-  <Text>Discover</Text>
+  <Text>Outings</Text>
   </NavigatorIOS>
   </View>
 )
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default DiscoverTab;
+export default OutingsTab;

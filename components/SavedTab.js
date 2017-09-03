@@ -5,4 +5,10 @@ const SavedTab = ({props}) => (
   <NavigatorIOS style={styles.container}/>
 )
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+})
+
 export default SavedTab;
