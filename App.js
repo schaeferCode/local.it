@@ -27,6 +27,7 @@ export default class LotsOfGreetings extends Component {
         </View>
         <View style={{flex: 2, backgroundColor: 'powderblue'}}>
           <Discover />
+          <Toolbar />
         </View>
       </View>
     );
