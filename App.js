@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Login from './components/Login';
 import Discover from './components/Discover';
-import Toolbar from './components/toolbar.js'
+import Toolbar from './components/Toolbar';
 
 
 export default class LocalIt extends Component {
