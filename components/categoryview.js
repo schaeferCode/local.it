@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, StyleSheet, Text, View, TouchableOpacity, Image, Keyboard, TextInput, ScrollView, Linking } from 'react-native';
 import Item from 'item';
+
 export default class Categories extends Component {
   constructor(props) {
     super(props);
