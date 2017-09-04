@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+
 import Discover from './components/Discover';
 import Toolbar from './components/toolbar.js'
 
 
 export default class LocalIt extends Component {
+=======
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+
+  }
   render() {
     return (
       <View style={{
